@@ -4,14 +4,19 @@ import Navbar from "./components/Navbar";
 import Hp from "./components/Hp";
 import FooterTop from "./components/FooterTop";
 import FooterBawah from "./components/FooterBawah";
+import { useEffect } from "react";
+import AOS from "aos";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Navbar />
       <div className="App">
         <div className="container pp">
-          <div className="col-8">
+          <div className="col-8" data-aos="zoom-out" data-aos-duration="1000">
             <p className="p1 ">We Make IT Simple, Faster, and Less Expensive</p>
             <p className="p2">We're IT Business since 2022</p>
             <button

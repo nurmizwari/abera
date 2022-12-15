@@ -1,9 +1,27 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    // console.log(window.scrollY);
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
     <div>
-      <nav class="navbar fixed-top navbar-expand-lg bg-light">
+      {/* <nav class="navbar fixed-top navbar-expand-lg "> */}
+      <nav
+        class={
+          !navbar
+            ? "navbar fixed-top navbar-expand-lg  "
+            : "navbar fixed-top navbar-expand-lg bg-light "
+        }
+      >
         <div class="container">
           <button
             class="navbar-toggler"

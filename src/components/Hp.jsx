@@ -3,14 +3,18 @@ import React from "react";
 export default function Hp() {
   return (
     <div className="container hp mb-4 mt-5">
-      <div className="row ">
+      <div className="row">
         <div
           className="col "
+
           //   style={{ height: "403", width: "255px", padding: "90px" }}
         >
           <div
             class="card shadow mt-2 "
             style={{ height: "400px", width: "auto" }}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0"
           >
             <img
               src="https://backend-service.abera.id/apis/images/services/1658921272168573901.png"
@@ -31,6 +35,9 @@ export default function Hp() {
           <div
             class="card shadow mt-2 "
             style={{ height: "400px", width: "auto" }}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0"
           >
             <img
               src="https://backend-service.abera.id/apis/images/services/1658921303994157595.png"
@@ -52,6 +59,9 @@ export default function Hp() {
           <div
             class="card shadow mt-2 "
             style={{ height: "400px", width: "auto" }}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0"
           >
             <img
               src="https://backend-service.abera.id/apis/images/services/1658921321319601160.png"
@@ -72,6 +82,9 @@ export default function Hp() {
           <div
             class="card shadow mt-2 "
             style={{ height: "400px", width: "auto" }}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="0"
           >
             <img
               src="https://backend-service.abera.id/apis/images/services/1658921340037003917.png"
@@ -91,7 +104,7 @@ export default function Hp() {
       </div>
       <div className="row">
         <div className="col text-end mt-2">
-          <a href="">Lihat lebih banyak </a>
+          <a href="https://abera.id/">Lihat lebih banyak </a>
         </div>
       </div>
     </div>
