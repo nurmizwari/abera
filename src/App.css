@@ -1,38 +1,98 @@
 .App {
-  text-align: center;
+  background-image: url("./assets/banner2.png");
+  height: 100vh;
+  width: 100%;
+  font-family: Poppins;
+  /* position: fixed; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a.nav-link {
+  color: black;
+  font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item {
+  margin-right: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  height: 100px;
+  /* position: relative; */
+}
+.pp {
+  height: 90vh;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.p1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+}
+.p2 {
+  color: #555555;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Roboto;
+}
+.hp {
+  width: 100%;
+  height: 50vh;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+.hp1 {
+  height: 403px;
+  width: 255px;
+  /* padding: 30px; */
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Poppins;
+}
+
+h5 {
+  text-align: center;
+}
+.card {
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.card:hover {
+  background-color: #205887;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footerTop {
+  width: 100%;
+  height: 40vh;
+  margin-top: 120px;
+}
+.footerBawah {
+  background-color: #f1f5fe;
+  height: 80px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footerTop h3 {
+  margin-bottom: 30px;
 }
